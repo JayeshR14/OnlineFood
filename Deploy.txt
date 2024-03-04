@@ -1,0 +1,7 @@
+1] ng build --output-path docs --base-href OnlineFood
+
+
+
+
+
+

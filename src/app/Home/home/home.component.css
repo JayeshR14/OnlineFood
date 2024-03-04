@@ -1,0 +1,131 @@
+.one{
+   
+}
+
+@media (max-width: 576px) {
+ 
+  .home_main{
+    flex-direction: column-reverse;
+  }
+  .one h1{
+    font-size:0.9rem;
+    margin-bottom: 5px;
+   }
+   .one p{
+    font-size:2.2rem;
+  }
+  .satisfy-text{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }  
+}
+
+@media (max-width: 768px) {
+ 
+  .one{
+     align-items: center;
+  }
+}
+@media (min-width: 576px) {
+ 
+     .one h1{
+        font-size:0.9rem;
+        margin-bottom: 5px;
+       }
+       .one p{
+        font-size:2.2rem;
+        margin-bottom: 10px;
+      }
+      .satisfy-text{
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+      }
+      
+  }
+  
+  @media (min-width: 768px) {
+     .one h1{
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+       } 
+       .one p{
+        font-size:3rem;
+        margin-bottom: 20px;
+      }
+      .satisfy-text{
+        font-size: 1.0rem;
+        margin-bottom: 4px;
+      }
+      
+  }
+  
+  @media (min-width: 992px) {
+    .one h1{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+       }
+
+       .one p{
+        font-size:4rem;
+        margin-bottom: 40px;
+      }
+      .satisfy-text{
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+   
+    .one h1{
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+   }
+   .one p{
+    font-size:5rem;
+    margin-bottom: 50px;
+  }
+  .satisfy-text{
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+
+  @font-face {
+    font-family: "MyCustomFontMercyChristole";
+    src: url('/assets/fonts/MercyChristole.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: "MyCustomFontChicago";
+    src: url('/assets/fonts/Chicago.otf') format('woff');
+  }
+
+  .one h1{
+    font-family: "MyCustomFontMercyChristole", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:rgb(222, 57, 57);
+    
+}
+
+.one p{
+  font-weight: 500;
+  color:#171A21;
+  white-space: nowrap;
+}
+
+
+
+.satisfy-text {
+  white-space: nowrap;
+  color:rgb(80, 80, 80);
+  font-weight: 400;
+ 
+}
+

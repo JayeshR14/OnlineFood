@@ -1,0 +1,43 @@
+<div class="main_cart mt-3 d-flex align-items-center flex-column ">
+    <div class="row container justify-content-center align-items-center" *ngFor='let food of cartItem' [ngStyle]="{'margin-bottom.px':20}">
+      <div class="item_list d-flex flex-row align-items-center p-3 " style="max-width: 500px;">
+      
+        <!-- Left side: Image -->
+        <div class="d-flex justify-content-center align-items-center">
+          <img [src]='food.imageUrl' alt="Product Image" class="img-fluid" [ngStyle]="{'max-width.px': '150'}" style="height:100%">
+        </div>
+    
+        <!-- Right side: Text content -->
+       
+          <div class="w-100" style="padding-left: 1rem;">
+          <p>{{food.Name}}</p>
+          <p><span>Total Amount : </span>{{food.CartAmount | currency:'INR':'symbol': '1.2-2' }}</p>
+          <div class="d-flex justify-content-between align-items-end ">
+          <div class="quantity_btn">
+          <button type="button" class="btnleft" (click)="addOrRemoveItems($event, food)">-</button>
+          <p class="d-inline px-2">{{food.Quantity}}</p>
+          <button type="button" class="btnright" (click)="addOrRemoveItems($event, food)">+</button>
+          </div>
+          <div>
+          <i class="fa fa-trash text-danger" (click)='onDeleteItem(food.Name)' aria-hidden="true"></i>
+          </div>
+        </div>
+          </div>
+         
+        </div>
+    </div>
+
+  
+        <div class="sub-bill" style="width:100%;max-width: 500px;margin-bottom: 20px;" *ngIf='cartItem.length' >
+        <h1 class="d-flex justify-content-center"><span>Invoice</span></h1>
+        <h4 class="d-flex justify-content-between"><span>Sub Total</span><span></span><span>{{subTotal | currency:'INR':'symbol': '1.2-2'}}</span></h4>
+        <h4 class="d-flex justify-content-between "><span>Discount</span><span></span><span>2%</span></h4>
+        <h4 class="d-flex justify-content-between "><span>Taxes and Charges</span><span></span><span>5%</span></h4>
+        <h4 class="d-flex justify-content-between "><span>Grand Total</span><span></span><span>{{grandTotal | currency:'INR':'symbol': '1.2-2'}}</span></h4>
+      </div>
+    
+
+    <div *ngIf='!cartItem.length'>
+        <h1>No itmes In cart</h1>
+    </div>
+</div>

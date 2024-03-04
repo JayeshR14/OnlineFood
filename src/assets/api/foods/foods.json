@@ -1,0 +1,45 @@
+[
+    {
+       "Name":"Khaman",
+       "Category":"Available",
+       "Price":"20.00",
+       "imageUrl":"https://www.bombayspices.ca/wp-content/uploads/2019/03/KHAMAN.jpg"
+    },
+    {
+        "Name":"Patra",
+        "Category":"Available",
+        "Price":"20.50",
+        "imageUrl":"https://www.secondrecipe.com/wp-content/uploads/2022/10/af-patra-500x375.jpg"
+    },
+    {
+       "Name":"Fafda",
+       "Category":"Available",
+       "Price":"30.00",
+       "imageUrl":"https://th.bing.com/th/id/OIP.uUcWNuArl-5zEGIuu06V3QHaE7?w=270&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+        "Name":"Jalebi",
+       "Category":"Available",
+       "Price":"25.00",
+       "imageUrl":"https://th.bing.com/th/id/OIP.chV6VkcGnKfV6BnBipxeUQHaE8?w=251&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+       "Name":"Patudi",
+       "Category":"Out of stock",
+       "Price":"30.00",
+       "imageUrl":"https://th.bing.com/th/id/OIP.9taVZRks_Lby9r06hCw0sAHaFc?w=262&h=193&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+        "Name":"Chocolate Cake",
+       "Category":"Available",
+       "Price":"350.00",
+       "imageUrl":"https://th.bing.com/th/id/OPAC.3s0sKKUuHtOgeA474C474?w=178&h=231&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+    "Name":"Milk Shake",
+    "Category":"Available",
+    "Price":"350.00",
+    "imageUrl":"https://th.bing.com/th/id/OIP.CZxm7gq-Hodf9OOqXykAFAHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+ }
+
+]

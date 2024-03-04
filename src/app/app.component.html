@@ -1,0 +1,44 @@
+<header class="header">
+  <nav class="navbar">
+      <a href="#" class="nav-logo">OnlineFood</a>
+      <ul class="nav-menu z-1" [ngClass]="{'active': isMenuActive}">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/home" (click)='closeMenu()'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/menu" (click)="closeMenu()">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/contact" (click)="closeMenu()">Contact us</a>
+        </li>
+        <li class="nav-item" style="width:40px">
+          <a routerLinkActive="active" routerLink="/cart">Cart<i class="fa fa-shopping-cart"  (click)="closeMenu()"></i></a>
+        </li>
+      </ul>
+      <div class="hamburger" (click)="toggleMenu()">
+          <span class="bar text-white"></span>
+          <span class="bar text-white"></span>
+          <span class="bar text-white"></span>
+      </div>
+  </nav>
+</header>
+  
+<div class='container'>
+  <router-outlet></router-outlet>
+  </div>
+  <footer class="footer mt-auto py-3 bg-gray">
+    <div class="container text-center">
+      <div class="d-flex flex-column justify-content-center align-items-center ">
+        <div class="col-lg-6">
+          <p>Email: onlinefood@google.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="col-lg-6">
+          <p>&copy; 2024 OnlineFood</p>
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
