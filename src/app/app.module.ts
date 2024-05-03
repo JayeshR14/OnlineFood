@@ -5,7 +5,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { FoodsComponent } from './foods/foods.component';
 import { HomeComponent } from './Home/home/home.component';
 import {RouterModule} from '@angular/router';
-import { ContactComponent } from './contact/contact/contact.component';
+import { ContactComponent } from '../contact/contact/contact.component';
 import {FormsModule} from '@angular/forms';
 import { CartComponent } from './cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
